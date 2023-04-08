@@ -16,9 +16,6 @@ detection_model = AutoDetectionModel.from_pretrained(
 
 def define_doc_state(doc):
 
-    with open(doc.name,"wb") as f:
-         f.write(doc.getbuffer())
-
     result = get_sliced_prediction(
         doc.name,
         detection_model,
