@@ -1,12 +1,8 @@
 import PIL
-from sahi.utils.yolov5 import (
-    download_yolov5s6_model,
-)
+
 import sahi
 import streamlit as st
 from sahi import AutoDetectionModel
-from sahi.utils.cv import read_image
-from sahi.utils.file import download_from_url
 from sahi.predict import get_prediction, get_sliced_prediction, predict
 
 
